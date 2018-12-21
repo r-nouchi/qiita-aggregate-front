@@ -19,6 +19,14 @@ module.exports = {
         test: /\.js?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader',
       },
       { test: /\.js?$/, exclude: /node_modules/, loaders: ['babel-loader'] },
+      {
+        test: /\.css/,
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { url: false } },
+        ],
+      },
+
     ],
   },
   resolve: {
