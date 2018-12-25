@@ -2,9 +2,9 @@
   "name": "qiita-aggregate-front",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main/main.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --progress --colors --history-api-fallback --mode development",
+    "start": "electron .",
     "build": "webpack --progress --colors --mode production",
     "lint": "eslint src/**"
   },
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/r-nouchi/qiita-aggregate-front#readme",
   "dependencies": {
     "antd": "^3.11.2",
+    "electron": "^4.0.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
   },
